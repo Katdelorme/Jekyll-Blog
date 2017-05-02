@@ -1,0 +1,12 @@
+Initialed Git Repo
+Created Git Directory Jekyll-Blog
+Visit Jekyll quick starter: https://jekyllrb.com/docs/quickstart/
+Install/Check requirements: https://jekyllrb.com/docs/installation/#requirements
+  Ruby | https://www.ruby-lang.org/en/downloads/
+    Used Ruby Installer ruby-build | https://github.com/rbenv/ruby-build#readme
+    Note to
+  RubyGems
+  Checked GCC & Make
+    gcc -v & make -v in command line
+
+https://github.com/rbenv/ruby-build#readme
