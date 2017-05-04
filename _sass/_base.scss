@@ -1,0 +1,16 @@
+---
+# Variables, mixins, and resets will go here.
+---
+
+$primary: #ffff00;
+$secondary: #ff0000;
+$font-style-primary: 'Lato', sans-serif;
+$font-style-secondary: 'Open Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
