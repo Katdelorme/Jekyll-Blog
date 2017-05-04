@@ -1,12 +1,52 @@
 Initialed Git Repo
 Created Git Directory Jekyll-Blog
+
+Note: Have to use "sudo" due to permission issues in command line before "gem"
+
 Visit Jekyll quick starter: https://jekyllrb.com/docs/quickstart/
 Install/Check requirements: https://jekyllrb.com/docs/installation/#requirements
   Ruby | https://www.ruby-lang.org/en/downloads/
     Used Ruby Installer ruby-build | https://github.com/rbenv/ruby-build#readme
-    Note to
+      Ensure build environment has proper system dependencies for compiling
+      https://github.com/rbenv/ruby-build/wiki#suggested-build-environment
+      Then in command line rbenv install 2.2.0 (version #) | now 2.4.1
+        If no work: https://github.com/rbenv/ruby-build/wiki#suggested-build-environment
+        in command line: xcode-select --install & Get Homebrew: https://brew.sh/
+        Dont forget | brew install wget
+        Back to suggested build environment
+        xcode-select --install
+        if outdated xcode get new one from apple store, agree to license
+        brew install openssl libyaml libffi | command line
+        brew tap homebrew/dupes && brew install apple-gcc42 | command line - got an issue
+      Went back ruby build readme, try Homebrew
+          brew install ruby-build
+          back to rbenv install 2.2.0 (version #) | now 2.4.1
+          Still got rbenv command not found
+          Tried ruby-build 2.4.1 ~/local/ruby-2.4.1
+    Tried jekyll install again | sudo gem install jekyll bundler
   RubyGems
   Checked GCC & Make
     gcc -v & make -v in command line
 
-https://github.com/rbenv/ruby-build#readme
+  Went back to do Jekyll install got error  While executing gem ... (Errno::EPERM)
+    Operation not permitted - /usr/bin/listen
+
+    had to do sudo gem install jekyll bundler -n/usr/local/bin
+    http://stackoverflow.com/questions/31972968/cant-install-gems-on-os-x-el-capitan
+    bundle exec jekyll serve
+
+********
+    Okay follow each step https://jekyllrb.com/docs/quickstart/
+    And I mean each, do not already create the folder
+
+********* OMG WTF
+    Also could have used jekyll new . --force
+
+    dont forget to do bundle exec jekyll serve
+
+    http://localhost:4000
+    OR
+    http://localhost:4000/blog/index.html
+
+
+    the _config.yml file is where you can change Title, email, description, url etc. see meetup notes
