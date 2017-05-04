@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% if page.title %}{{ page.titile }}{% else %}{{ site.title}}{% endif %}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content=""/>
+	<meta name="keywords" content="">
+	<meta name="author" content="Katherine Delorme">
+	<meta name="application-name" content="Let's Talk Design - A Katdelorme Blog"/>
+	<!--Dublin Core-->
+	<meta name="DC.Title" content="Let's Talk Design - A Katdelorme Blog" />
+	<meta name="DC.Creator" content="Katherine Delorme" />
+	<meta name="DC.Subject" content="Web Design, UI, Frontend Design, Experiences" />
+	<meta name="DC.Description" content="" />
+	<meta name="DC.Type" content="Blog" />
+	<meta name="DC.Language" content="English" />
+	<!--Twitter Card: Summary-->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@Katdelorme" />
+	<meta name="twitter:title" content="{% if page.title %}{{ page.titile }}{% else %}{{ site.title}}{% endif %}" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image" content="" />
+	<!--Facebook Open Graph-->
+	<meta property="og:url" content="" />
+	<meta property="og:type" content="blog" />
+	<meta property="og:title" content="{% if page.title %}{{ page.titile }}{% else %}{{ site.title}}{% endif %}" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<!--favicon-->
+	<link rel="icon" type="image/png" href="http://katherinedelorme.com/favicon/fav.png" />
+	<!--stylesheets-->
+  <link rel="stylesheet" type="text/css" href="{{"/css/styles.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+  <!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,700italic|Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header>
+    <nav>
+      <ul>
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %} {% endfor %}
+        <li><a href="{{ "" | prepend: site.baseurl }}">Blog</a></li>
+      </ul>
+    </nav>
+	</header>
