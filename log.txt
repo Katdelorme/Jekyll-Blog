@@ -54,3 +54,5 @@ Install/Check requirements: https://jekyllrb.com/docs/installation/#requirements
 
 Working on the site
   Using the blog https://www.taniarascia.com/make-a-static-website-with-jekyll/ to help me with getting sarted on making changes
+
+  used "jelyll serve" at the end in command line
