@@ -31,18 +31,37 @@
 	<!--stylesheets-->
   <link rel="stylesheet" type="text/css" href="{{"/css/styles.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!--fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,700italic|Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	<header>
-    <nav>
+	<header class="nav-collapse head">
       <ul>
-        {% for page in site.pages %} {% if page.title %}
-        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-        {% endif %} {% endfor %}
-        <li><a href="{{ "" | prepend: site.baseurl }}">Blog</a></li>
+        <div class="logo">
+  			     <li><a rel="canonical" href="http://blog.katherinedelorme.com">Let's Talk Design</a></li>
+  			</div>
+        <div class="nav">
+          {% for page in site.pages %} {% if page.title %}
+          <li rel="canonical"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %} {% endfor %}
+          <li rel="canonical"><a href="{{ "" | prepend: site.baseurl }}">Blog</a></li>
+        </div>
       </ul>
-    </nav>
 	</header>
+  <!--<header class="nav-collapse head">
+		<ul>
+			<div class="logo">
+			<li><a rel="canonical" href="http://katherinedelorme.com">Katherine Delorme</a></li>
+			</div>
+			<div class="nav">
+			<li><a rel="canonical" href="works">Works</a></li>
+			<li><a rel="canonical" href="about">About</a></li>
+			<li><a rel="canonical" href="skills">Skills</a></li>
+			<li><a rel="canonical" href="contact">Contact</a></li>
+			<li><a rel="canonical" href="signup">Sign Up</a></li>
+			<li><a rel="canonical" href="https://medium.com/@Katdelorme" target="_blank">Stories</a></li>
+		</div>
+		</ul>
+	</header>-->
