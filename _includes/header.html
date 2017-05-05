@@ -43,25 +43,10 @@
   			     <li><a rel="canonical" href="http://blog.katherinedelorme.com">Let's Talk Design</a></li>
   			</div>
         <div class="nav">
+          <li rel="canonical"><a href="{{ "" | prepend: site.baseurl }}">Blog</a></li>
           {% for page in site.pages %} {% if page.title %}
           <li rel="canonical"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
           {% endif %} {% endfor %}
-          <li rel="canonical"><a href="{{ "" | prepend: site.baseurl }}">Blog</a></li>
         </div>
       </ul>
 	</header>
-  <!--<header class="nav-collapse head">
-		<ul>
-			<div class="logo">
-			<li><a rel="canonical" href="http://katherinedelorme.com">Katherine Delorme</a></li>
-			</div>
-			<div class="nav">
-			<li><a rel="canonical" href="works">Works</a></li>
-			<li><a rel="canonical" href="about">About</a></li>
-			<li><a rel="canonical" href="skills">Skills</a></li>
-			<li><a rel="canonical" href="contact">Contact</a></li>
-			<li><a rel="canonical" href="signup">Sign Up</a></li>
-			<li><a rel="canonical" href="https://medium.com/@Katdelorme" target="_blank">Stories</a></li>
-		</div>
-		</ul>
-	</header>-->
