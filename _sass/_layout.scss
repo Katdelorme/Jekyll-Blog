@@ -103,4 +103,37 @@ section{
 	margin: 5% 15% 1% 15%;
 	width: 70%;
 }
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  flex: 1;
+}
+.Aligner-item--top {
+  align-self: flex-start;
+}
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+.Aligner-item--fixed {
+  flex: none;
+  max-width: 50%;
+}
+.hero{
+  background: transparentize($primary, 0.25);
+  clear: both;
+  height: 50vh;
+  @extend .Aligner;
+  div{
+    background: transparentize($tertiary, 0.25);
+    height: 20vh;
+    width:40%;
+    @extend .Aligner;
+  }
+}
+.post-item{
+  background: $secondary;
+}
 /* ///////////// Pages end ////////////// */
