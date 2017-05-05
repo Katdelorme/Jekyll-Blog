@@ -1,8 +1,7 @@
 /* ///////////// header  ////////////// */
 .head{
 	clear: both;
-	background-color:#012a37;
-	/*border-bottom: 1px solid #fff;*/
+	background-color: $primary;
 	display: block;
 	position: relative;
 	width: 100%;
@@ -12,46 +11,41 @@ header ul{
 	display: block;
 	margin: 0;
 	padding: 0;
+  li{
+  	border-right: 1px solid #222;
+  	float: left;
+  	font-family: "Lato", Helvetica, Arial, sans-serif;
+  	position: relative;
+    &:last-child {
+    	border-right: none;
+    }
+  }
 }
 
-header ul li{
-	border-right: 1px solid #222;
-	float: left;
-	font-family: "Lato", Helvetica, Arial, sans-serif;
-	position: relative;
+header ul li a{
+  &:link{
+  	color: $tertiary;
+  	display: inline-block;
+  	line-height: 54px;
+  	text-decoration: none;
+  }
+  &:visited {
+  	color: $tertiary;
+  }
+  &:hover    {
+  	background-color: $tertiary;
+  	color: $secondary;
+  }
+  &:active   {
+  	background-color:#504949;
+  	color: $tertiary;
+  }
+  &:focus {
+  	background-color:#504949;
+  	color: $tertiary;
+  }
 }
 
-header ul li:last-child {
-	border-right: none;
-}
-
-header ul li a:link{
-	color: #ffffff;
-	display: inline-block;
-	line-height: 54px;
-	/*padding: 0 18px;*/
-	text-decoration: none;
-}
-
-header ul li a:visited {
-	color: #ffffff;
-}
-
-header ul li a:hover    {
-	/*background-color:#504949;*/
-	background-color:#ffffff;
-	color: #0489b7;;
-}
-
-header ul li a:active   {
-	background-color:#504949;
-	color: #ffffff;
-}
-
-header ul li a:focus {
-	background-color:#504949;
-	color: #ffffff;
-}
 .logo{
 	padding: 0 5% 0 2%;
 }
@@ -74,7 +68,7 @@ footer p:first-child{
 }
 
 footer p:last-child{margin: 2% 0;}
-footer p:last-child span{color:#0489b7;font-size: 1.2em;}
+footer p:last-child span{color: $secondary;font-size: 1.2em;}
 
 footer a:link,footer a:visited,footer a:active,footer a:focus{
 	color:#000000;
@@ -82,7 +76,7 @@ footer a:link,footer a:visited,footer a:active,footer a:focus{
 	text-decoration: none;
 }
 footer a:hover    {
-	color: #0489b7;;
+	color: $secondary;
 }
 .socialfooter{
 	margin-top:2%;
@@ -91,7 +85,7 @@ footer a:hover    {
 .socialfooter a{
 	margin:0 0.5%;
 	text-decoration:none;
-	color:#0489B7;
+	color: $secondary;
 }
 .socialfooter a:hover{
 	color:#036384;
