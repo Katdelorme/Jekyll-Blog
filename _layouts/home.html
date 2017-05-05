@@ -11,16 +11,18 @@
   <section>
         Tests Home<br/><br/>
 
-        <div class="post-item">
+      <div class="postholder">
         {% for post in site.posts %}
+        <div class="post-item">
       		<time>{{ post.date | date: "%b %-d, %Y" }}</time>
       		<h3>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h3>
+        </div>
         {% endfor %}
-        <div>
+      </div>
 
-      <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <p class="subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
   </section>
 
 

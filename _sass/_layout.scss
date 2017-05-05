@@ -133,7 +133,19 @@ section{
     @extend .Aligner;
   }
 }
+.subscribe{
+  margin-top: 5%;
+}
+.postholder{
+  @extend .Aligner;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .post-item{
   background: $secondary;
+  width: 30%;
+  &:nth-child(even){
+    background: $primary;
+  }
 }
 /* ///////////// Pages end ////////////// */
