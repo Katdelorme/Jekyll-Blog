@@ -14,15 +14,18 @@
       <div class="postholder">
         {% for post in site.posts %}
         <div class="post-item">
+          <div><img src="{{ post.banner}}" alt="" width="500" height="300"/></div>
+          <h5>{{ post.categories}}</h5>
       		<time>{{ post.date | date: "%b %-d, %Y" }}</time>
       		<h3>
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h3>
+          <p>{{ post.shortblurb }}</p>
         </div>
         {% endfor %}
       </div>
 
-      <p class="subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <p class="subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a> | Add to Feedly</p>
   </section>
 
 

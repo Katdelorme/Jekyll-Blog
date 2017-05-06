@@ -137,8 +137,9 @@ section{
   margin-top: 5%;
 }
 .postholder{
-  @extend .Aligner;
-  flex-wrap: wrap;
+  /*@extend .Aligner;
+  flex-wra: wrap;*/
+  display: flex;
   justify-content: space-between;
 }
 .post-item{
@@ -146,6 +147,10 @@ section{
   width: 30%;
   &:nth-child(even){
     background: $primary;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
   }
 }
 /* ///////////// Pages end ////////////// */
