@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "First Jekyll Build! What Do You Think?"
 date:   2017-05-03 17:42:47 -0400
-categories: jekyll update
-shortblurb: Does short description works
+categories: jekyll
+shortblurb: DLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt erat at massa porttitor faucibus. Donec congue ac mauris nec pretium. Nullam accumsan velit id sodales consequat.
 banner: http://placehold.it/1040x600
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
