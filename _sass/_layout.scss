@@ -121,14 +121,35 @@ section{
   flex: none;
   max-width: 50%;
 }
+.featuredlink{
+  text-decoration: none;
+  color: #000000;
+  /*-webkit-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+	-moz-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+	-ms-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+	-o-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+  transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+  visibility: hidden;
+  will-change: transform;
+  -webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+          transform: translateY(100%);*/
+}
 .hero{
   background: transparentize($primary, 0.25);
+  background-size: cover;
+  background-position: center center;
+  /*background: linear-gradient(rgba(1, 42, 55, 0.75), rgba(1, 42, 55, 0.75)), url("../assets/sectionBackground.jpg") no-repeat;*/
   clear: both;
   height: 50vh;
   @extend .Aligner;
   div{
-    background: transparentize($tertiary, 0.25);
+    background: transparentize($tertiary, 0.30);
     height: 20vh;
+    padding: 2%;
+    text-align: center;
     width:40%;
     @extend .Aligner;
   }
