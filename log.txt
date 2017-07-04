@@ -62,3 +62,6 @@ Working on the site
 
 solve category space issue https://stackoverflow.com/questions/20255211/jekyll-page-categories-prints-categories-without-spaces-between-them
 {{ post.categories | join: ' ' }}
+
+
+Format dates: http://alanwsmith.com/jekyll-liquid-date-formatting-examples

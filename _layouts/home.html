@@ -24,12 +24,12 @@
             </a>
           </div>
           <div class="post-caption">
-            <p>{{ post.categories | join: ' ' }}</p>
+            <span>{{ post.categories | join: ' ' }}</span>
         		<p>
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </p>
             <p>{{ post.shortblurb }}</p>
-            <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+            <time>{{ post.date | date: "%B %-d, %Y" }}</time>
           </div>
         </div>
         {% endfor %}

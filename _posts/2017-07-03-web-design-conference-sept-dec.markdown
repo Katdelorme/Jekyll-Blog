@@ -3,7 +3,7 @@ layout: post
 title:  "Best Conferences in 2017 for Web Design (September-December)"
 date:   2017-07-03 17:43:47 -0400
 categories: learning jekyll
-shortblurb: End the year strong with a conference that'll learn you craving to design more. Develop your next idea or try a new framework.
+shortblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
 banner: https://cdn-images-1.medium.com/max/2000/1*QD0hM1drOFNMLX5Ro_417Q.jpeg
 ---
 
