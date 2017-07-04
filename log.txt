@@ -65,3 +65,5 @@ solve category space issue https://stackoverflow.com/questions/20255211/jekyll-p
 
 
 Format dates: http://alanwsmith.com/jekyll-liquid-date-formatting-examples
+
+change permalink: https://jekyllrb.com/docs/permalinks/
