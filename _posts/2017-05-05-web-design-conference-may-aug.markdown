@@ -48,4 +48,16 @@ Paris, France
 <br>
 At last year’s location Vienna they announced Paris would be the 2017 host. Releasing 2,000 tickets without promotion already about 500 tickets sold. It’s expected the Paris event will be “bigger and better than ever.” Word of advice “you don’t want to miss out just because you forgot to get your ticket in time.”
 
+<span>Post Status Publish</span>
+<br>
+<a href="https://poststatus.com/publish/">https://poststatus.com/publish/</a>
+<br>
+August 3-4, 2017
+<br>
+Atlanta, Georgia
+<br>
+This suggested addon came from <a href="https://medium.com/@krystinaramos/perhaps-youd-be-interested-in-adding-the-post-status-publish-conference-in-atlanta-e6db446a7147" target="_blank">Krystina Ramos</a>.
+<br>
+A conference for WordPress professionals. A "two days of conference and networking opportunities to chat with like-minded folks". "Post Status Club Members tend to be the type of folks that attend WordPress conferences, but spend most of their time in the hallway track. The goal for Post Status Publish is to bring the hallway track to the main stage."
+
 For the full 2017 list check out the story on <a href="https://medium.com/@Katdelorme/conferences-in-2017-for-web-design-a357aea60c87" target="_blank">Medium</a>.
