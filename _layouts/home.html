@@ -6,8 +6,8 @@
   {% if post.featured == true %}
   <!--<a href="{{ post.url | prepend: site.baseurl }}" class="featuredlink">-->
     <section class="intro introPage">
-        <h2>{{ post.title }}</h2>
-        <a rel="canonical" href="{{ post.url | prepend: site.baseurl }}" class="roundlink">Read</a>
+        <h2 class="homePostTitle">{{ post.title }}</h2>
+        <a rel="canonical" href="{{ post.url | prepend: site.baseurl }}" class="roundLink">Read</a>
     </section>
   <!--</a>-->
   {% endif %}
@@ -24,7 +24,7 @@
             </a>
           </div>
           <div class="post-caption">
-            <p>{{ post.categories}}</p>
+            <p>{{ post.categories | join: ' ' }}</p>
         		<p>
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </p>

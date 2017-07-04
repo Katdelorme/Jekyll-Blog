@@ -56,6 +56,9 @@ Install/Check requirements: https://jekyllrb.com/docs/installation/#requirements
 Working on the site
   Using the blog https://www.taniarascia.com/make-a-static-website-with-jekyll/ to help me with getting started on making changes
 
-  used "jekyll serve" at the end in command line
+  **used "jekyll serve" at the end in command line
 
   Also helpful https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+solve category space issue https://stackoverflow.com/questions/20255211/jekyll-page-categories-prints-categories-without-spaces-between-them
+{{ post.categories | join: ' ' }}
