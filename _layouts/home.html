@@ -4,13 +4,12 @@
 
   {% for post in site.posts %}
   {% if post.featured == true %}
-  <a href="{{ post.url | prepend: site.baseurl }}" class="featuredlink">
-    <div class="hero" style='background: linear-gradient(rgba(1, 42, 55, 0.55), rgba(1, 42, 55, 0.60)), url("{{ post.banner}}") no-repeat;background-size: cover;background-position: center center;'>
-      <div>
+  <!--<a href="{{ post.url | prepend: site.baseurl }}" class="featuredlink">-->
+    <section class="intro introPage">
         <h2>{{ post.title }}</h2>
-      </div>
-    </div>
-  </a>
+        <a rel="canonical" href="{{ post.url | prepend: site.baseurl }}" class="roundlink">Read</a>
+    </section>
+  <!--</a>-->
   {% endif %}
   {% endfor %}
 

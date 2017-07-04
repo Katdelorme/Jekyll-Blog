@@ -83,6 +83,23 @@ footer span{color:#0489b7;font-size: 1.2em;}
 /* ///////////// footer end ////////////// */
 
 /* ///////////// Pages ////////////// */
+.roundlink{
+	border: 2px solid $primary;
+	border-radius: 30px;
+	color: $primary;
+	display: inline-table;
+	font-size: 1.5em;
+	font-weight: 600;
+	letter-spacing: 4px;
+	margin-top: 5%;
+	padding: 15px 45px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.roundlink:hover{
+	background: $primary;
+	color: $tertiary;
+}
 .Aligner {
   display: flex;
   align-items: center;
@@ -185,40 +202,8 @@ time{
 /* ///////////// Posts end ////////////// */
 
 /* ///////////// Newsletter ////////////// */
-.newsletterPortion{
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% auto;
-	display: flex;
-	flex-direction: column;
-	height: 50vh;
-	justify-content: center;
-	padding-left: 7.5%;
-}
 .newsletterImgHome{
 	background-image: url("http://katherinedelorme.com/assets/stockphotosforsite/3-4.jpg");
 	background-position: center center;
-}
-
-.newsletterPortion a{
-	border: 2px solid #ffffff;
-	border-radius: 30px;
-	color: #ffffff;
-	display: inline-table;
-	font-size: 1.5em;
-	font-weight: 600;
-	letter-spacing: 4px;
-	margin-top: 5%;
-	padding: 15px 45px;
-	text-decoration: none;
-	text-transform: uppercase;
-
-	-webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s, color 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s, color 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  overflow: visible;
-}
-.newsletterPortion a:hover{
-	border: 2px solid #000000;
-	color: #000000;
 }
 /* ///////////// Newsletter end ////////////// */
