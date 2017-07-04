@@ -4,7 +4,7 @@ title:  "First Jekyll Build! What Do You Think?"
 date:   2017-05-03 17:42:47 -0400
 categories: jekyll
 shortblurb: At the April Frontend Orlando meetup I learned about Jekyll. A static site generator and an interesting new project for me to start.
-banner: ../assets/jekyllBuild.jpg
+banner: /assets/jekyllBuild.jpg
 ---
 This blog is the first project I've made utilizing Jekyll. It was an interesting endeavor and proud creation. I have to admit getting the project started was frustrating. After clearing my first blockade, building became simple and customization a fun exploration.
 
