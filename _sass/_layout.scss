@@ -57,52 +57,32 @@ header ul li a{
 
 /* ///////////// footer  ////////////// */
 footer{
-	min-height: 50px;
-	padding: 4% 0 0 0;
-	text-align: center;
-	width: 100%;
-  p{
-    &:first-child{
-    	font-size: 1em;
-    	text-transform: uppercase;
-    }
-    &:last-child{
-      margin: 2% 0;
-      span{
-        color: $secondary;font-size: 1.2em;
-      }
-    }
-  }
+	align-items: center;
+	display: flex;
+	min-height:80px;
+	justify-content: space-between;
+	padding-left:7.5%;
+	padding-right:7.5%;
 }
 
 footer a:link,footer a:visited,footer a:active,footer a:focus{
 	color:#000000;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
 }
 footer a:hover    {
-	color: $secondary;
+	color: #0489b7;;
 }
-.socialfooter{
-	margin-top:2%;
-	text-align:center;
-  a{
-  	margin:0 0.5%;
-  	text-decoration:none;
-  	color: $secondary;
-    &:hover{
-    	color:#036384;
-    }
-  }
+
+footer p{
+	font-size: 1em;
+	line-height: 24px;
+	margin: 0 0 2%;
 }
+
+footer span{color:#0489b7;font-size: 1.2em;}
 /* ///////////// footer end ////////////// */
 
 /* ///////////// Pages ////////////// */
-section{
-	display: inline-block;
-	margin: 5% 15% 1% 15%;
-	width: 70%;
-}
 .Aligner {
   display: flex;
   align-items: center;
@@ -124,18 +104,6 @@ section{
 .featuredlink{
   text-decoration: none;
   color: #000000;
-  /*-webkit-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
-	-moz-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
-	-ms-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
-	-o-transition: all 0.275s ease-in-out, visibility 0s 0.275s;
-  transition: all 0.275s ease-in-out, visibility 0s 0.275s;
-  visibility: hidden;
-  will-change: transform;
-  -webkit-transform: translateY(100%);
-	-moz-transform: translateY(100%);
-	-ms-transform: translateY(100%);
-	-o-transform: translateY(100%);
-          transform: translateY(100%);*/
 }
 .hero{
   background: transparentize($primary, 0.25);
@@ -161,7 +129,8 @@ section{
   /*@extend .Aligner;
   flex-wra: wrap;*/
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+	margin-top: 2%;
 }
 .post-item{
   border: 1px #CCCCCC solid;
@@ -214,3 +183,42 @@ time{
   }
 }
 /* ///////////// Posts end ////////////// */
+
+/* ///////////// Newsletter ////////////// */
+.newsletterPortion{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	justify-content: center;
+	padding-left: 7.5%;
+}
+.newsletterImgHome{
+	background-image: url("http://katherinedelorme.com/assets/stockphotosforsite/3-4.jpg");
+	background-position: center center;
+}
+
+.newsletterPortion a{
+	border: 2px solid #ffffff;
+	border-radius: 30px;
+	color: #ffffff;
+	display: inline-table;
+	font-size: 1.5em;
+	font-weight: 600;
+	letter-spacing: 4px;
+	margin-top: 5%;
+	padding: 15px 45px;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	-webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s, color 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s, color 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: visible;
+}
+.newsletterPortion a:hover{
+	border: 2px solid #000000;
+	color: #000000;
+}
+/* ///////////// Newsletter end ////////////// */

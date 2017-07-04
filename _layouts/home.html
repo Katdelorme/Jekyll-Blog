@@ -15,8 +15,6 @@
   {% endfor %}
 
   <section>
-        Tests Home<br/><br/>
-
       <div class="postholder">
         {% for post in site.posts %}
         <div class="post-item">
@@ -27,10 +25,10 @@
             </a>
           </div>
           <div class="post-caption">
-            <h5>{{ post.categories}}</h5>
-        		<h3>
+            <p>{{ post.categories}}</p>
+        		<p>
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h3>
+            </p>
             <p>{{ post.shortblurb }}</p>
             <time>{{ post.date | date: "%b %-d, %Y" }}</time>
           </div>
@@ -38,7 +36,7 @@
         {% endfor %}
       </div>
 
-      <p class="subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a> | Add to Feedly</p>
+      <p class="subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a> | Add to Feedly | follow the Jekyll build on <a href="https://github.com/Katdelorme/Jekyll-Blog" target="_blank">GitHub</a></p>
   </section>
 
 
