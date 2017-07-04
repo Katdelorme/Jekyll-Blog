@@ -36,6 +36,8 @@ Amsterdam, The Netherlands
 <br>
 A great place to discover what’s going on and future trends in The Next Web. Help invent the future in this “not your average tech event”. This includes speakers, investors, startup competition and more.
 
+<img src="https://cdn-images-1.medium.com/max/1600/1*k6vIlEiXRriHMWXvWpt5EA.jpeg" alt="session from word Camp Europe" width="100%" />
+
 <span>WordCamp Europe 2017</span>
 <br>
 <a href="https://2017.europe.wordcamp.org/">https://2017.europe.wordcamp.org/</a>
@@ -46,4 +48,4 @@ Paris, France
 <br>
 At last year’s location Vienna they announced Paris would be the 2017 host. Releasing 2,000 tickets without promotion already about 500 tickets sold. It’s expected the Paris event will be “bigger and better than ever.” Word of advice “you don’t want to miss out just because you forgot to get your ticket in time.”
 
-<img src="https://cdn-images-1.medium.com/max/1600/1*k6vIlEiXRriHMWXvWpt5EA.jpeg" alt="session from word Camp Europe" width="100%"/>
+For the full 2017 list check out the story on <a href="https://medium.com/@Katdelorme/conferences-in-2017-for-web-design-a357aea60c87" target="_blank">Medium</a>.
