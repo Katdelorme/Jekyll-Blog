@@ -4,8 +4,15 @@ title:  "Best Conferences in 2017 for Web Design (May-August)"
 date:   2017-05-03 17:42:47 -0400
 categories: Web Design Conference
 shortblurb: It's close to the midway point of the year, there's still a chance to attend a conference.
+twitterblurb: It's close to the midway point of the year, there's still a chance to attend a conference.
+linkedinblurb: It's close to the midway point of the year, there's still a chance to attend a conference.
+pinterestblurb: It's close to the midway point of the year, there's still a chance to attend a conference.
+pinterestmedia: https://cdn-images-1.medium.com/max/1600/1*k6vIlEiXRriHMWXvWpt5EA.jpeg
+fbsocialmediaimg: https://cdn-images-1.medium.com/max/1600/1*k6vIlEiXRriHMWXvWpt5EA.jpeg
+twsocialmediaimg: https://cdn-images-1.medium.com/max/1600/1*k6vIlEiXRriHMWXvWpt5EA.jpeg
 banner: https://cdn-images-1.medium.com/max/1600/1*k6vIlEiXRriHMWXvWpt5EA.jpeg
-featured: true
+featured: false
+readtime: 1 min read
 ---
 
 Close to the midway point of the year and there's still a chance to attend great conferences focused on web design and development. If you haven't already attended one or are looking for a change encounter take a look at this list.

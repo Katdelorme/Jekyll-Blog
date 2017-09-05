@@ -3,10 +3,17 @@ layout: default
 ---
 
 <h2>{{ page.title }}</h2>
-<time>{{ page.date | date: "%B %-d, %Y"}}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+<time>{{ page.date | date: "%B %-d, %Y"}}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} · {{ page.readtime }}</time>
+
 <div class="post">
     {{ content }}
+
+    {% include social-sharer.html %}
+
+    {% include facebook-comment.html %}
 </div>
+
+
 
 <section>
   <h2>Related Posts</h2>

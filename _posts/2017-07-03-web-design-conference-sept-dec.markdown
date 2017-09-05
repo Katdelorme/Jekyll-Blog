@@ -4,7 +4,14 @@ title:  "Best Conferences in 2017 for Web Design (September-December)"
 date:   2017-07-03 17:43:47 -0400
 categories: learning jekyll
 shortblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
+twitterblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
+linkedinblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
+pinterestblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
+pinterestmedia: https://cdn-images-1.medium.com/max/2000/1*QD0hM1drOFNMLX5Ro_417Q.jpeg
+fbsocialmediaimg: https://cdn-images-1.medium.com/max/2000/1*QD0hM1drOFNMLX5Ro_417Q.jpeg
+twsocialmediaimg: https://cdn-images-1.medium.com/max/2000/1*QD0hM1drOFNMLX5Ro_417Q.jpeg
 banner: https://cdn-images-1.medium.com/max/2000/1*QD0hM1drOFNMLX5Ro_417Q.jpeg
+readtime: 1 min read
 ---
 
 Close the year with a great web design and development conference of your choosing. If you have yet to attend a conference in 2017 there's still time.

@@ -4,7 +4,14 @@ title:  "First Jekyll Build! What Do You Think?"
 date:   2017-05-03 17:42:47 -0400
 categories: jekyll
 shortblurb: At the April Frontend Orlando meetup I learned about Jekyll. A static site generator and an interesting new project for me to start.
+twitterblurb: Follow @Katdelorme as she details her journey learning Jekyll at the Frontend Orlando meetup to building her first site using a static site generator
+linkedinblurb: Follow a web designer's journey in learning Jekyll at a meetup to building their first site using the static site generator
+pinterestblurb: Follow a web designer's journey in learning Jekyll at a meetup to building their first site using the static site generator
+pinterestmedia: http://blog.katherinedelorme.com/assets/jekyllBuild.jpg
+fbsocialmediaimg: http://blog.katherinedelorme.com/assets/jekyllBuild.jpg
+twsocialmediaimg: http://blog.katherinedelorme.com/assets/jekyllBuild.jpg
 banner: /assets/jekyllBuild.jpg
+readtime: 1 min read
 ---
 This blog is the first project I've made utilizing Jekyll. It was an interesting endeavor and proud creation. I have to admit getting the project started was frustrating. After clearing my first blockade, building became simple and customization a fun exploration.
 

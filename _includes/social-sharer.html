@@ -1,0 +1,31 @@
+<h6>Share this post</h6>
+
+<div class="postShare">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.katherinedelorme.com{{ page.url }}" target="_blank">
+    <i class="fa fa-facebook fa-lg"></i>
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=http://blog.katherinedelorme.com{{ page.url }}&text={{ page.twitterblurb }} via @{{ site.twitter_username }}" target="_blank">
+    <i class="fa fa-twitter fa-lg"></i>
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://blog.katherinedelorme.com{{ page.url }}&title={{ page.title }}&summary={{ page.linkedinblurb }}&source={{ site.title }}" target="_blank">
+    <i class="fa fa-linkedin fa-lg"></i>
+  </a>
+  {% if page.pinterestmedia %}
+    <a href="https://pinterest.com/pin/create/button/?url=http://blog.katherinedelorme.com{{ page.url }}&media={{ page.pinterestmedia }}&description={{ page.pinterestblurb }}" target="_blank">
+      <i class="fa fa-pinterest-p fa-lg"></i>
+    </a>
+  {% endif %}
+  <a href="http://www.tumblr.com/share/link?url=http://blog.katherinedelorme.com{{ page.url }}&name={{ page.title }}&description={{ page.linkedinblurb }}" target="_blank">
+    <i class="fa fa-tumblr fa-lg"></i>
+  </a>
+  <a href="http://www.reddit.com/submit?url=http://blog.katherinedelorme.com{{ page.url }}&title={{ page.title }}" target="_blank">
+    <i class="fa fa-reddit-alien fa-lg"></i>
+  </a>
+  <a href="http://www.stumbleupon.com/submit?url=http://blog.katherinedelorme.com{{ page.url }}" target="_blank">
+    <i class="fa fa-stumbleupon fa-lg"></i>
+  </a>
+  <a  href="mailto:?subject=You'll Enjoy Reading: {{ page.title }}&amp;body=Check out this awesome post by Katdelorme http://blog.katherinedelorme.com{{ page.url }}"
+	        title="Share via Email" >
+	  <i class="fa fa-envelope fa-lg"></i>
+  </a>
+</div>

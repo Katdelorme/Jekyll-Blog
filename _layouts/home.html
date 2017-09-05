@@ -14,8 +14,72 @@
   {% endfor %}
 
   <section>
+      {% assign loopindex = 0 %}
+      {% for post in site.posts %}
+        {% assign loopindex = loopindex | plus: 1 %}
+          {% assign rowfinder = loopindex | modulo: 3 %}
+            {% if rowfinder == 1 %}
+              <div class="postholder">
+                <div class="post-item">
+                  <div>
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                      <div class="postimg" style="background-image: url({{ post.banner}})"></div>
+                    </a>
+                  </div>
+                  <div class="post-caption">
+                    <span>{{ post.categories | join: ' ' }}</span>
+                		<p>
+                      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </p>
+                    <p>{{ post.shortblurb }}</p>
+                    <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+                  </div>
+                </div>
+            {% elsif rowfinder == 0 %}
+                <div class="post-item">
+                  <div>
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                      <div class="postimg" style="background-image: url({{ post.banner}})"></div>
+                    </a>
+                  </div>
+                  <div class="post-caption">
+                    <span>{{ post.categories | join: ' ' }}</span>
+                		<p>
+                      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </p>
+                    <p>{{ post.shortblurb }}</p>
+                    <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+                  </div>
+                </div>
+              </div>
+            {% else %}
+              <div class="post-item">
+                <div>
+                  <a href="{{ post.url | prepend: site.baseurl }}">
+                    <div class="postimg" style="background-image: url({{ post.banner}})"></div>
+                  </a>
+                </div>
+                <div class="post-caption">
+                  <span>{{ post.categories | join: ' ' }}</span>
+              		<p>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </p>
+                  <p>{{ post.shortblurb }}</p>
+                  <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+                </div>
+              </div>
+            {% endif %}
+      {% endfor %}
+      {% if rowfinder != 0 %}
+        </div>
+      {% endif %}
+
+      <p class="subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a> | Add to <a href="https://feedly.com/i/discover/sources/search/https://medium.com/@Katdelorme/" target="_blank">Feedly</a> | follow the Jekyll build on <a href="https://github.com/Katdelorme/Jekyll-Blog" target="_blank">GitHub</a></p>
+  </section>
+
+  <!--<section>
       <div class="postholder">
-        {% for post in site.posts %}
+        {% for post in site.posts limit:3 %}
         <div class="post-item">
           <div>
             <a href="{{ post.url | prepend: site.baseurl }}">
@@ -35,7 +99,7 @@
       </div>
 
       <p class="subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a> | Add to <a href="https://feedly.com/i/discover/sources/search/https://medium.com/@Katdelorme/" target="_blank">Feedly</a> | follow the Jekyll build on <a href="https://github.com/Katdelorme/Jekyll-Blog" target="_blank">GitHub</a></p>
-  </section>
+  </section>-->
 
 
 

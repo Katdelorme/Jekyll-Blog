@@ -135,6 +135,7 @@ footer span{color:#0489b7;font-size: 1.2em;}
   /*@extend .Aligner;
   flex-wra: wrap;*/
   display: flex;
+	margin-bottom: 4%;
   justify-content: space-around;
 }
 .postholderspace{
@@ -192,8 +193,11 @@ time{
 .post{
 	margin-bottom: 4%;
   p{
+		&:first-child{
+			margin-top: 4%;
+		}
 		line-height: 180%;
-    margin-top: 4%;
+    margin-bottom: 4%;
     span{
       font-weight: 700;
     }
@@ -205,6 +209,38 @@ time{
 article{
 	display: inline-block;
 	margin: 2% 5% 0px 5%;
+}
+.fiftySplit a{
+	display: inline-block;
+	float: left;
+	margin-bottom: 2%;
+	width: 49%;
+	&:first-child{
+		margin-right: 2%;
+	}
+	img {
+		width: 100%;
+	}
+}
+.postShare a{
+	margin-right: 2%;
+	text-decoration: none;
+}
+.postShare a:hover{
+	color: #0489b7;
+}
+
+.imgfullwidth{
+	width: 100%;
+}
+
+figcaption{
+	color: rgba(0,0,0,.6);
+	font-family: $font-style-primary;
+	padding-bottom: 10px;
+}
+.facebookComments{
+	margin-top: 4%;
 }
 /* ///////////// Posts end ////////////// */
 

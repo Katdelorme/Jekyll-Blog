@@ -5,3 +5,20 @@ $secondary: #0489b7;
 $tertiary: #ffffff;
 $font-style-primary: 'Lato';
 $font-style-secondary: 'Quicksand';
+h6 {
+  color:#000000;
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: 1%;
+}
+.photo-source{ //use with <figcaption> then span image in <figure>
+  color: #bbb;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+}
+.update{
+  color: #272727;
+  display: block;
+  font-size: 16px;
+}
