@@ -3,7 +3,8 @@ layout: default
 ---
 
 <h2>{{ page.title }}</h2>
-<time>{{ page.date | date: "%B %-d, %Y"}}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} · {{ page.readtime }}</time>
+<time class="posttime">{{ page.date | date: "%B %-d, %Y"}}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} · {{ page.readtime }}</time>
+<p class="subscribe subscribePost">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a> | Add to <a href="https://feedly.com/i/discover/sources/search/https://medium.com/@Katdelorme/" target="_blank">Feedly</a></p>
 
 <div class="post">
     {{ content }}

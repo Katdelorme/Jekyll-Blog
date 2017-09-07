@@ -131,6 +131,15 @@ footer span{color:#0489b7;font-size: 1.2em;}
 .subscribe a{
 	color: $secondary;
 }
+.subscribePost{
+	font-family: $font-style-primary;
+	margin-left: 0;
+  margin-top: 0;
+	margin-bottom: 3%;
+}
+.posttime{
+	margin-bottom: 1%;
+}
 .postholder{
   /*@extend .Aligner;
   flex-wra: wrap;*/
