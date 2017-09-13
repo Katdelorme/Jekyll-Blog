@@ -214,6 +214,14 @@ time{
   a{
     color: #000000;
   }
+	ul{
+		font-family: $font-style-secondary;
+		font-size: 1.5em;
+		line-height: 180%;
+		list-style-position:inside;
+		list-style-type: square;
+		margin-left: 30px;
+	}
 }
 article{
 	display: inline-block;
@@ -251,6 +259,22 @@ figcaption{
 .facebookComments{
 	margin-top: 4%;
 }
+.holderBlog{
+	display: inline-block;
+}
+.oneThird{
+	float: left;
+	width: 33.33%;
+	margin-right: 5%;
+}
+.twoThird{
+	float: left;
+	width: 61.67%;
+}
+.oneHalf{
+	float: left;
+	width: 50%;
+}
 /* ///////////// Posts end ////////////// */
 
 /* ///////////// Newsletter ////////////// */
@@ -268,6 +292,15 @@ figcaption{
 	.post-item {
 		margin: 2% 10%;
     width: 80%;
+	}
+}
+@media only screen and (max-width: 650px) {
+	.oneThird{
+		width: 100%;
+		margin-right: 0;
+	}
+	.twoThird{
+		width: 100%;
 	}
 }
 /* ///////////// responsiveness end////////////// */

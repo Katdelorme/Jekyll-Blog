@@ -4,7 +4,7 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title}}{% endif %} - Katherine Delorme</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content=""/>
-	<meta name="keywords" content="">
+	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords}}{% endif %}, let's talk design blog">
 	<meta name="author" content="Katherine Delorme">
 	<meta name="application-name" content="Let's Talk Design - A Katdelorme Blog"/>
 	<!--Dublin Core-->
@@ -21,6 +21,7 @@
 	<meta name="twitter:description" content="{{ page.shortblurb }}" />
 	<meta name="twitter:image" content="{{ page.twsocialmediaimg }}" />
 	<!--Facebook Open Graph-->
+  <meta property="fb:app_id" content="833084606862489" />
 	<meta property="og:url" content="http://blog.katherinedelorme.com{{ page.url}}" />
 	<meta property="og:type" content="blog" />
   <meta property="author" content="https://www.facebook.com/KatdelormeKatdesign/" />
@@ -37,7 +38,7 @@
   <link rel="canonical" href="http://blog.katherinedelorme.com{{ page.url }}">
   <!--fonts-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,700italic|Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900|Quicksand' rel='stylesheet' type='text/css'>
 </head>
 
 <body>

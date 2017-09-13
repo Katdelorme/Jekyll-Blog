@@ -3,6 +3,7 @@ layout: post
 title:  "Best Conferences in 2017 for Web Design (May-August)"
 date:   2017-05-03 17:42:47 -0400
 categories: Web Design Conference
+keywords: web design conferences, May web design conferences, August web design conferences, web design conferences between May and August
 shortblurb: It's close to the midway point of the year, there's still a chance to attend a conference.
 twitterblurb: It's close to the midway point of the year, there's still a chance to attend a conference.
 linkedinblurb: It's close to the midway point of the year, there's still a chance to attend a conference.

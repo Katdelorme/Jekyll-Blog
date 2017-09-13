@@ -3,6 +3,7 @@ layout: post
 title:  "Best Conferences in 2017 for Web Design (September-December)"
 date:   2017-07-03 17:43:47 -0400
 categories: learning jekyll
+keywords: web design conferences, web design conferences in October, web design conferences in December, web design conferences between October and December
 shortblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
 twitterblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
 linkedinblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.

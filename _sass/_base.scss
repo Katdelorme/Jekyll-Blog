@@ -11,8 +11,15 @@ h6 {
   font-weight: 700;
   margin-bottom: 1%;
 }
+.bold{
+  color:#000000;
+  font-weight: 900;
+  margin: 0 !important;
+  padding: 0;
+}
 .photo-source{ //use with <figcaption> then span image in <figure>
   color: #bbb;
+  font-family: $font-style-primary;
   font-size: 14px;
   font-style: italic;
   text-align: left;
