@@ -63,7 +63,7 @@ footer span{color:#0489b7;font-size: 1.2em;}
 	text-align: center;
 	width: 70%;
 }
-.roundLink{
+a.roundLink{
 	border: 2px solid $primary;
 	border-radius: 30px;
 	color: $primary;
@@ -79,10 +79,11 @@ footer span{color:#0489b7;font-size: 1.2em;}
 	-moz-transition: all 0.6s ease-in-out;
 	-o-transition: all 0.6s ease-in-out;
 	transition: all 0.6s ease-in-out;
-}
-.roundLink:hover{
-	background: $primary;
-	color: $tertiary;
+	&:hover{
+		background: $primary;
+		color: $tertiary;
+		text-decoration: none;
+	}
 }
 .Aligner {
   display: flex;
