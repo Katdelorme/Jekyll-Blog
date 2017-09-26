@@ -285,6 +285,87 @@ figcaption{
 }
 /* ///////////// Newsletter end ////////////// */
 
+/* ///////////// Signup Form ////////////// */
+#mc_embed_signup input {
+    border: 1px solid #ABB0B2;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+#mc_embed_signup{
+	width: 80%;
+	margin: auto;
+}
+#mc-embedded-subscribe-form{
+	#mc_embed_signup .mc-field-group{
+		background-color: #fff;
+		color: #aaa;
+		cursor: pointer;
+    clear: left;
+    position: relative;
+		transition: all 0.23s ease-in-out 0s;
+    width: 96%;
+    padding-bottom:0;
+    min-height: 50px;
+		height: 32px;
+	}
+	.indicates-required {
+    text-align: right;
+    font-size: 11px;
+    /*margin-right: 4%;*/
+	}
+	.asterisk {
+    color: #e85c41;
+    font-size: 150%;
+    font-weight: normal;
+    position: relative;
+    top: 5px;
+	}
+	.mc-field-group{
+		margin-bottom: 2%;
+		&:last-child{
+			background: red;
+		}
+	}
+	input[type="text"], input[type="email"]{
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+		display: block;
+    outline: 0;
+    padding: 15px 10px;
+		text-indent: 1%;
+    width: 98%;
+	}
+	input[type="submit"]{
+		background: $tertiary;
+		border: 1px solid #ffffff;
+		border-radius: 0px;
+		color: $secondary;
+		height: auto;
+		letter-spacing: .1em;
+    padding: 15px 14px;
+		text-decoration: none;
+		text-transform: uppercase;
+		width: 100% !important;
+		&:hover{
+			background: #0489b7;
+			color: #ffffff;
+		}
+	}
+	#mc-embedded-subscribe{
+		width: 96%;
+		letter-spacing: .1em;
+		border: none;
+		border-radius: 0px;
+		text-transform: uppercase;
+		&:hover{
+			background: #0489b7;
+			color: #ffffff;
+		}
+	}
+}
+/* ///////////// Signup Form end ////////////// */
+
 /* ///////////// responsiveness ////////////// */
 @media only screen and (max-width: 770px) {
 	.postholder {
