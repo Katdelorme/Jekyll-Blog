@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Best Conferences in 2017 for Web Design (May-August)"
+title:  "Best Conferences In 2017 For Web Design (May-August)"
 date:   2017-05-03 17:42:47 -0400
 categories: Web Design Conference
 keywords: web design conferences, May web design conferences, August web design conferences, web design conferences between May and August
