@@ -18,16 +18,19 @@
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@Katdelorme" />
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title}}{% endif %}" />
-	<meta name="twitter:description" content="{{ page.shortblurb }}" />
-	<meta name="twitter:image" content="{{ page.twsocialmediaimg }}" />
+  <meta name="twitter:description" content="{% if page.shortblurb %}{{ page.shortblurb }}{% else %}Curious? Hello there. Let's get this conversation rolling. Are you interested in design? Code? Well so am I and I love sharing this passion with others.{% endif %}" />
+	<meta name="twitter:image" content="{% if page.twsocialmediaimg %}{{ page.twsocialmediaimg }}{% else %}http://blog.katherinedelorme.com/assets/blog.png{% endif %}" />
 	<!--Facebook Open Graph-->
   <meta property="fb:app_id" content="833084606862489" />
 	<meta property="og:url" content="http://blog.katherinedelorme.com{{ page.url}}" />
 	<meta property="og:type" content="article" />
   <meta property="article:author" content="https://www.facebook.com/KatdelormeKatdesign/" />
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title}}{% endif %}" />
-	<meta property="og:description" content="{{ page.shortblurb }}" />
-	<meta property="og:image" content="{{ page.fbsocialmediaimg }}" />
+	<meta property="og:description" content="{% if page.shortblurb %}{{ page.shortblurb }}{% else %}Curious? Hello there. Let's get this conversation rolling. Are you interested in design? Code? Well so am I and I love sharing this passion with others.{% endif %}" />
+  <meta property="og:image" content="{% if page.fbsocialmediaimg %}{{ page.fbsocialmediaimg }}{% else %}http://blog.katherinedelorme.com/assets/blog.png{% endif %}" />
+  <!--Pinterest Open Graph-->
+  <meta property="og:site_name" content="Let's Talk Design" />
+  <meta property="og:published_time" content="{% if page.date %}{{ page.date | date: "%Y-%m-%d" }}{% else %}{{ site.time | date: "%Y-%m-%d" }}{% endif %}" />
 	<!--favicon-->
 	<link rel="icon" type="image/png" href="http://katherinedelorme.com/favicon/fav.png" />
 	<!--stylesheets-->
