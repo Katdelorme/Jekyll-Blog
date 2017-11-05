@@ -2,40 +2,56 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-<time class="posttime">{{ page.date | date: "%B %-d, %Y"}}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} · {{ page.readtime }}</time>
-<p class="subscribe subscribePost">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a> | Add to <a href="https://feedly.com/i/discover/sources/search/https://medium.com/@Katdelorme/" target="_blank">Feedly</a></p>
+  <div style="margin: 4% 5% 0 5%;">
+    <h2>{{ page.title }}</h2>
+    <time class="posttime">{{ page.date | date: "%B %-d, %Y"}}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} · {{ page.readtime }}</time>
+    <p class="subscribe subscribePost">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a> | Add to <a href="https://feedly.com/i/discover/sources/search/http%3A%2F%2Fblog.katherinedelorme.com%2F" target="_blank">Feedly</a></p>
 
-<div class="post post-container">
-    <div class="post-side-bar">
-      {{ content }}
+    <div class="post post-container">
+        <div class="post-side-bar">
+          {{ content }}
 
-      {% include social-sharer.html %}
+          {% include social-sharer.html %}
 
-      {% include facebook-comment.html %}
+          {% include facebook-comment.html %}
+        </div>
+
+        <div class="side-bar">
+          {% include sidebar.html %}
+        </div>
     </div>
 
-    <div class="side-bar">
-      {% include sidebar.html %}
-    </div>
-</div>
-
-<section>
-  <h2>Related Posts</h2>
-  <div class="postholder postholderspace">
-    {% for post in site.related_posts limit: 3 %}
-    <div class="post-item">
-      <div>
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <div class="postimg" style="background-image: url({{ post.banner}})"></div>
-        </a>
-      </div>
-      <div class="post-caption">
-        <p>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </p>
-      </div>
-    </div>
-    {% endfor %}
+    <section>
+      {% assign hasSimilar = '' %}
+      {% for post in site.related_posts %}
+          {% assign postHasSimilar = false %}
+          {% for category in post.categories %}
+              {% for thisCategory in page.categories %}
+                  {% if postHasSimilar == false and hasSimilar.size < 3 and post != page and category == thisCategory %}
+                      {% if hasSimilar.size == 0 %}
+                      <h2>Related Posts</h2>
+                      <div class="postholder postholderspace">
+                        {% endif %}
+                        <div class="post-item">
+                          <div>
+                            <a href="{{ post.url | prepend: site.baseurl }}">
+                              <div class="postimg" style="background-image: url({{ post.banner}})"></div>
+                            </a>
+                          </div>
+                          <div class="post-caption">
+                            <p>
+                              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </p>
+                          </div>
+                        </div>
+                      {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+                      {% assign postHasSimilar = true %}
+                  {% endif %}
+              {% endfor %}
+          {% endfor %}
+      {% endfor %}
+      {% if hasSimilar.size > 0 %}
+                  </div>
+      {% endif %}
+    </section>
   </div>
-</section>

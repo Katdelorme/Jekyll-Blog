@@ -149,6 +149,7 @@ a.roundLink{
   justify-content: space-around;
 }
 .postholderspace{
+	justify-content: space-between;
 	margin: 2% 0px 6% 0px;
 }
 .post-item{
@@ -226,7 +227,11 @@ time{
 }
 article{
 	display: inline-block;
-	margin: 4% 5% 0 5%;
+	/*margin: 4% 5% 0 5%;*/
+	margin: 0;
+}
+.slimPost{
+	margin: 4% 15% 0 15%;
 }
 .fiftySplit a{
 	display: inline-block;
@@ -250,6 +255,10 @@ article{
 
 .imgfullwidth{
 	width: 100%;
+}
+
+.imghalfwidth{
+	width: 50%;
 }
 
 figcaption{
@@ -321,6 +330,11 @@ figcaption{
 				text-decoration: underline;
 			}
 		}
+}
+.postbanner{
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
 }
 /* ///////////// Posts end ////////////// */
 

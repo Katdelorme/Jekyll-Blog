@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: post-slim
 title:  "Best Conferences In 2017 For Web Design (September-December)"
 date:   2017-07-03 17:43:47 -0400
-categories: Web Design Conference
+categories: [Web Design Conference]
 keywords: web design conferences, web design conferences in October, web design conferences in December, web design conferences between October and December
 shortblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
 twitterblurb: End the year strong with a conference that'll leave you craving to design more. Develop your next idea or try a new framework.
@@ -53,8 +53,7 @@ San Francisco, CA, US
 <br>
 https://adobecreativejams.com/
 <br>
-With various locations and times, you’re certain to find an event near you.
-A Look Back at My First Adobe Creative Jam.
+With various locations and times, you’re certain to find an event near you. I still <a href="https://medium.com/@Katdelorme/a-look-back-at-my-first-adobe-creative-jam-a2f3602992b0" target="_blank">"Look Back at My First Adobe Creative Jam"</a> with fond memories.
 
 <span>An Event Apart</span>
 <br>
