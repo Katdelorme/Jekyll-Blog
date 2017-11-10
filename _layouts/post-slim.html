@@ -10,7 +10,13 @@ layout: default
   <div class="slimPost">
     <h2>{{ page.title }}</h2>
     <time class="posttime">{{ page.date | date: "%B %-d, %Y"}}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} · {{ page.readtime }}</time>
-    <p class="subscribe subscribePost">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a> | Add to <a href="https://feedly.com/i/discover/sources/search/http%3A%2F%2Fblog.katherinedelorme.com%2F" target="_blank">Feedly</a></p>
+    <p class="subscribe subscribePost">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">via RSS</a> | Add to <a href="https://feedly.com/i/discover/sources/search/http%3A%2F%2Fblog.katherinedelorme.com%2F" target="_blank">Feedly</a> | <span onclick="copyToClipboard('#copyLink')" class="pointer" id="clipped">Copy Link</span></p>
+
+    <span id="copyLink" style="display:none;">http://blog.katherinedelorme.com{{ page.url }}</span>
+
+    <div id="alert" class="alert alert-warning fade">
+      Copied to Clipboard
+    </div>
 
     <div class="post">
         {{ content }}
@@ -55,3 +61,36 @@ layout: default
       {% endif %}
     </section>
   </div>
+
+<script>
+  function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+    var clip = document.getElementById('clipped');
+    var alert = document.getElementById('alert');
+
+    clipped.addEventListener('click', function() {
+      alert.classList.add('in');
+
+      setTimeout(function() {
+        alert.classList.remove('in');
+      }, 2000);
+    });
+
+    var clip2 = document.getElementById('clipped2');
+    clipped2.addEventListener('click', function() {
+      alert.classList.add('in');
+
+      setTimeout(function() {
+        alert.classList.remove('in');
+      }, 2000);
+    });
+
+    txt.addEventListener('blur',function (){
+      alert.classList.remove('in')
+    });
+</script>
