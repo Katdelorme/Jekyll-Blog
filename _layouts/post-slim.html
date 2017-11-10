@@ -3,15 +3,7 @@ layout: default
 ---
 
   {% if page.banner %}
-    <div class="postbanner" style="
-      background-image: url({{ page.banner}});
-      {% if page.banner2 %}
-        background-image: url({{ page.banner2}});
-      {% endif %}
-      {% if page.bannerposition %}
-        background-position: {{ page.bannerposition }};
-      {% endif %}
-      ">
+    <div class="postbanner" style="background-image: url({{ page.banner}});{% if page.banner2 %}background-image: url({{ page.banner2}});{% endif %}{% if page.bannerposition %}background-position: {{ page.bannerposition }};{% endif %}">
     </div>
   {% endif %}
 
