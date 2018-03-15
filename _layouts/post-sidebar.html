@@ -37,7 +37,7 @@ layout: default
                         <div class="post-item">
                           <div>
                             <a href="{{ post.url | prepend: site.baseurl }}">
-                              <div class="postimg" style="background-image: url({{ post.banner}})"></div>
+                              <div class="postimg" style="{% if post.banner %}background-image: url({{ post.banner}}){% else %}background-image: url(http://blog.katherinedelorme.com/assets/blog.png){% endif %}"></div>
                             </a>
                           </div>
                           <div class="post-caption">
