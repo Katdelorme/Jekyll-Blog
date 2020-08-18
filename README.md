@@ -38,23 +38,8 @@ Install/Check [requirements](https://jekyllrb.com/docs/installation/#requirement
 Start server in command line
 `bundle exec jekyll serve`
 
-### Editing SASS
-Preprocessing - Editing SASS
-"The most direct way to make this happen is in your terminal. Once Sass is installed, you can compile your Sass to CSS using the sass command." - Sass-lang
-
-`sass input.scss output.css`
-
-`sass scss/styles.sass css/styles.css`
-
-The watch flag tells Sass to watch your source files for changes, and re-compile CSS each time you save your Sass.
-
-`sass --watch scss/styles.sass css/styles.css`
-
-You can watch and output to directories by using folder paths as your input and output, and separating them with a colon.
-
-`sass --watch app/sass:public/stylesheets`
-
-`sass --watch scss/styles.sass:css/styles.css`
+### SCSS
+"Jekyll provides built-in support for Sass and can work with CoffeeScript via a Ruby gem." -[jekyllrb.com](https://jekyllrb.com/docs/assets/#sassscss?utm_source=katdelormegithub&utm_medium=github "jekyllrb.com").
 
 For additional information visit [Sass Guideline](https://sass-lang.com/guide?utm_source=katdelormegithub&utm_medium=github "Sass Guideline").
 
