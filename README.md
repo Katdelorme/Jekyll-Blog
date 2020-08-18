@@ -1,5 +1,5 @@
-[![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)]
-[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)]
+![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)
+![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)
 
 # Jekyll-Blog
 First attempt creating something with Jekyll. The goal was to create a blog with a static site generator. **The site can be viewed at [http://blog.katherinedelorme.com/](http://blog.katherinedelorme.com/?utm_source=github&utm_medium=repo&utm_campaign=jekyll_blog_readme "blog")**.
@@ -24,11 +24,11 @@ You can download a zip file, fork this project, or clone with HTTPS.
 * Flexbox
 
 ### Installing Ruby
-Download [Ruby](https://www.ruby-lang.org/en/downloads/?utm_source=katdelormegithub&utm_medium=github "Ruby")
+Download [Ruby](https://www.ruby-lang.org/en/downloads/?utm_source=katdelormegithub&utm_medium=github "Ruby").
 
-Using Ruby Installer ruby-build "a command-line utility that makes it easy to install virtually any version of Ruby, from source." [ruby-build](https://github.com/rbenv/ruby-build#readme?utm_source=katdelormegithub&utm_medium=github "ruby-build")
+Using Ruby Installer ruby-build "a command-line utility that makes it easy to install virtually any version of Ruby, from source." Learn [ruby-build](https://github.com/rbenv/ruby-build#readme?utm_source=katdelormegithub&utm_medium=github "ruby-build").
 
-Ensure build environment has proper system dependencies for compiling. [Suggested build environment](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment?utm_source=katdelormegithub&utm_medium=github "ruby-build").
+Ensure the build environment has proper system dependencies for compiling. [Suggested build environment](https://github.com/rbenv/ruby-build/wiki#suggested-build-environment?utm_source=katdelormegithub&utm_medium=github "ruby-build").
 
 ### Using Jekyll
 Visit [Jekyll quick starter](https://jekyllrb.com/docs/quickstart/?utm_source=katdelormegithub&utm_medium=github "Jekyll quick starter").
